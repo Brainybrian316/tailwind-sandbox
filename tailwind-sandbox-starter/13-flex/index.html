@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Flex</title>
-  </head>
-  <body>
-    <!-- Flex and alignment -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Flex</title>
+	</head>
+	<body>
+		<!-- Flex and alignment -->
+		<p>row</p>
+		<div class="flex h-72 w-full bg-grey-100 justify-around items-center flex-wrap">
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">1</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">2</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">3</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">4</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">5</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">6</div>
+		</div>
 
-    <!-- Flex Column, Gap and Order -->
+		<!-- Flex Column, Gap and Order -->
+		<p>col</p>
+		<div class="flex flex-col w-full bg-grey-100 gap-4">
+			<div class="order-3 bg-blue-200 w-20 p-10 border border-red-800">1</div>
+			<div class="order-2 bg-blue-200 w-20 p-10 border border-red-800">2</div>
+			<div class="order-4 bg-blue-200 w-20 p-10 border border-red-800">3</div>
+			<div class="order-1 bg-blue-200 w-20 p-10 border border-red-800">4</div>
+		</div>
 
-    <!-- Grow and shrink -->
-  </body>
+		<!-- Grow and shrink -->
+		<p>grow shrink</p>
+		<div class="flex w-full bg-grey-100">
+			<div class="flex-initial w-64 bg-blue-200 w-20 p-10 border border-red-800">flex initial</div>
+			<div class="flex-none w-64 bg-blue-200 w-20 p-10 border border-red-800">flex none</div>
+			<div class="flex-auto w-64 bg-blue-200 w-20 p-10 border border-red-800">flex auto</div>
+			<div class="flex-1 bg-blue-200 w-20 p-10 border border-red-800">flex 1</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">5</div>
+			<div class="bg-blue-200 w-20 p-10 border border-red-800">6</div>
+		</div>
+	</body>
 </html>
 
 <!-- Justify Content
