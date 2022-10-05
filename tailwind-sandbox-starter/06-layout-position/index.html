@@ -1,37 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>TailwindCSS</title>
-  </head>
-  <body>
-    <!-- Positioning -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>TailwindCSS</title>
+	</head>
+	<body>
+		<!-- Positioning -->
+		<div class="relative h-12 bg-red-200 w-1/2">
+			<p class="">parent element</p>
+			<div class="absolute bottom-0 right-0 bg-red-500">
+				<p class="">absolute child</p>
+			</div>
+		</div>
+		<!-- Top left corner -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+		</div>
 
-    <!-- Top left corner -->
+		<!-- Top right corner -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+		</div>
 
-    <!-- Top right corner -->
+		<!-- Bottom left corner -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+		</div>
 
-    <!-- Bottom left corner -->
+		<!-- Bottom right corner -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+		</div>
 
-    <!-- Bottom right corner -->
+		<!-- Span top edge -->
+		<br />
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute inset-x-0 top-0 h-16 bg-yellow-300">span top edge</div>
+		</div>
 
-    <!-- Span top edge -->
+		<!-- Span left edge -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute inset-y-0 left-0 w-16 bg-yellow-300">span left edge</div>
+		</div>
 
-    <!-- Span left edge -->
+		<!-- Span right edge -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute inset-y-0 right-0 w-16 bg-yellow-300">span right edge</div>
+		</div>
 
-    <!-- Span right edge -->
+		<!-- Span bottom edge -->
+		<div class="relative h-32 w-32 bg-yellow-100">
+			<div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300">span bottom edge</div>
+		</div>
 
-    <!-- Span bottom edge -->
+		<!-- Z-Index -->
+		<div class="relative h-10">
+			<div class="absolute left-10 w-24 h-10 bg-blue-300 z-10">1</div>
+			<div class="absolute left-20 w-24 h-10 bg-blue-400 z-20">2</div>
+			<div class="absolute left-40 w-24 h-10 bg-blue-500 z-30">3</div>
+			<div class="absolute left-60 w-24 h-10 bg-blue-600 z-40">4</div>
+			<div class="absolute left-80 w-24 h-10 bg-blue-700 z-50">5</div>
+		</div>
+		<br />
 
-    <!-- Display Classes -->
-
-    <!-- Z-Index -->
-
-    <!-- Floats -->
-  </body>
+		<!-- Floats -->
+		<div class="w-1/2">
+			<img src="../assets/img/img1.jpg" alt="" class="h-24 w-40 float-left m-2" />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, porro dolore eaque ullam
+				optio deleniti vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis
+				nostrum quos, unde fugiat numquam provident?
+			</p>
+		</div>
+	</body>
 </html>
 
 <!-- Position Classes
