@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Interactivity</title>
-  </head>
-  <body>
-    <!-- Hover State Styling -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Interactivity</title>
+	</head>
+	<body>
+		<!-- Hover State Styling -->
+		<button
+			class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-white"
+		>
+			submit
+		</button>
+		<!-- Focus State Styling -->
+		<button
+			class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-500 focus:text-white"
+		>
+			submit
+		</button>
 
-    <!-- Focus State Styling -->
+		<!-- Active State Styling -->
+		<button
+			class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-yellow-500 active:text-white"
+		>
+			submit
+		</button>
 
-    <!-- Active State Styling -->
+		<!-- Styling based on parent state -->
+		<a
+			href=""
+			class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500"
+		>
+			<h3 class="group-hover:text-white">Card title group hover</h3>
+			<p class="group-hover:text-white">This is card text</p>
+		</a>
 
-    <!-- Styling based on parent state -->
+		<!-- Pseudo Classes -->
+		<ul>
+			<li class="first:bg-red-200">item 1</li>
+			<li class="even:bg-green-500 odd:bg-orange-500">item 2</li>
+			<li class="even:bg-green-500 odd:bg-orange-500">item 3</li>
+			<li class="even:bg-green-500 odd:bg-orange-500">item 4</li>
+			<li class="even:bg-green-500 odd:bg-orange-500">item 5</li>
+			<li class="even:bg-green-500 odd:bg-orange-500">item 6</li>
+		</ul>
 
-    <!-- Pseudo Classes -->
+		<!-- Appearance -->
+		<!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+		<select class="appearance-none">
+			<option value="yes">yes</option>
+			<option value="no">No</option>
+		</select>
+		<br />
 
-    <!-- Appearance -->
-    <!-- Use appearance-none to reset any browser specific styling on an element. This utility is often used when creating custom form components. -->
+		<!-- Cursor -->
 
-    <!-- Cursor -->
+		<!-- Resize -->
 
-    <!-- Resize -->
+		<!-- User Select -->
 
-    <!-- User Select -->
-
-    <!-- Smooth Scroll Example -->
-  </body>
+		<!-- Smooth Scroll Example -->
+	</body>
 </html>
 
 <!-- Cursor
